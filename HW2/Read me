@@ -1,13 +1,24 @@
-How to run the code:
-I used palmetto, so i suggest using the same. 
-First clone the repo and transfer all the files to palmetto home section
-And then also make sure the dataset is present in the home section so that we can use the testing videos.
-And make sure the saved model modelkanish.h is in the folder where we have the saved models because it takes 60 mins+ to train a new model.
-Now run the sh file using the following command and you will get the bleu score as the output and a text file op will be created 
-./hw2_seq2seq.sh
-in case it says permission denied or something similar to that 
-Please use the following command first before running the sh file 
-chmod +x hw2_seq2seq.sh
+How to Run the Code
+For running the code, I recommend using Palmetto as the environment. Follow the steps below:
 
-Also note that depending on where you run the code and how you run it you might have to make changes to argument 1 and argument 2 in the sh file and also make changes to the dataset path and model path in the model_test and model_train python files.
+1. Clone the Repository
+Start by cloning the repository and transferring all the necessary files to your Palmetto home directory.
+git clone <your-repo-url>
+
+2. Transfer Files to Palmetto
+After cloning the repository, ensure all the relevant files, such as scripts, models, and datasets, are transferred to your Palmetto home directory, maintaining the appropriate folder structure.
+
+3. Ensure Dataset Availability
+Make sure the MSVD dataset is present in your home directory on Palmetto, as you will need it for testing the videos during evaluation.
+
+4. Pre-trained Model
+Ensure the pre-trained model file (model1.h) is placed in the appropriate folder for saved models, as training a new model from scratch can take lot of time.
+
+5. Execute the Shell Script
+To run the model and generate the output BLEU score along with a text file, use the following command:
+./hw2_seq2seq.sh
+First set the correct file permissions by running:
+chmod +x hw2_seq2seq.sh
+6. Modify Paths as Needed
+Depending on your execution environment or setup, you might need to adjust argument 1 and argument 2 in the shell script (hw2_seq2seq.sh). Additionally, ensure the correct paths for the dataset and model are specified in the model_test and model_train Python files.
 
