@@ -10,6 +10,8 @@ After cloning the repository, ensure all the relevant files, such as scripts, mo
 
 3. Ensure Dataset Availability
 Make sure the MSVD dataset is present in your home directory on Palmetto, as you will need it for testing the videos during evaluation.
+to unzip use code:
+tar -xvzf MLDS_hw2_1_data.tar.gz
 
 4. Pre-trained Model
 Ensure the pre-trained model file (model1.h) is placed in the appropriate folder for saved models, as training a new model from scratch can take lot of time.
